@@ -4,15 +4,11 @@
 }
 body {
     min-height: 100vh;
-    background-image: url(/assets/images/Cleo.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #f3f5f8;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
     width: 100%;
@@ -63,7 +59,7 @@ nav li:first-child {
 .menu-button {
     display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .hideOnMobile {
         display: none;
     }
