@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Navbar</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="/"
+                        ><svg
+                            width="42"
+                            height="42"
+                            viewBox="0 0 24 24"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve"
+                            xmlns:serif="http://www.serif.com/"
+                            style="
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 2;
+                            "
+                        >
+                            <g transform="matrix(0.025,0,0,0.025,0,24)">
+                                <path
+                                    d="M256,-227.69L227.69,-256L451.69,-480L227.69,-704L256,-732.31L480,-508.31L704,-732.31L732.31,-704L508.31,-480L732.31,-256L704,-227.69L480,-451.69L256,-227.69Z"
+                                    style="fill-rule: nonzero"
+                                />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Shop</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Gallery</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#"
+                        ><svg
+                            width="42"
+                            height="42"
+                            viewBox="0 0 24 24"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve"
+                            xmlns:serif="http://www.serif.com/"
+                            style="
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 2;
+                            "
+                        >
+                            <g transform="matrix(0.025,0,0,0.025,0,24)">
+                                <path
+                                    d="M160,-269.23L160,-309.23L800,-309.23L800,-269.23L160,-269.23ZM160,-460L160,-500L800,-500L800,-460L160,-460ZM160,-650.77L160,-690.77L800,-690.77L800,-650.77L160,-650.77Z"
+                                    style="fill-rule: nonzero"
+                                />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
