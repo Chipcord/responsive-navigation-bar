@@ -24,7 +24,7 @@ a {
     margin: auto;
 }
 .subcontainer {
-    width: 85%;
+    width: 95%;
     margin: auto;
 }
 .nav-link {
@@ -126,5 +126,13 @@ a {
     }
     .nav-branding.active {
         opacity: 0;
+    }
+    .subcontainer {
+        width: 93%;
+    }
+}
+@media (max-width: 500px) {
+    .subcontainer {
+        width: 85%;
     }
 }
